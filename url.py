@@ -265,7 +265,7 @@ class URLRequests:
 
         s.post(__URL, json=col, headers=header)
 
-    def PostComment(self, num, comment):  # Изменение статуса Задачи: 2 Задача
+    def PostComment(self, num, comment):  # Добавление комментария к задаче: 3 Задача
         __URL = self.base_url + 'comment/create'
         token = db.SelectDB(self.user_id)
 
